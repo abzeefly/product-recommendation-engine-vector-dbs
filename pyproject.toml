@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "product-recommendation-app"
+version = "1.0.0"
+description = "A simple app to give product recommendations using vector databases"
+authors = ["Abdullah Zaid Ansari"]
+readme = "README.md"
+packages = [{include = "product_recommendation_app"}]
+
+[tool.poetry.dependencies]
+python = "3.11.4"
+numpy = "^1.25.2"
+pandas = "^2.0.3"
+pgvector = "^0.2.1"
+langchain = "^0.0.254"
+transformers = "^4.31.0"
+google-cloud-aiplatform = "^1.29.0"
+asyncio = "^3.4.3"
+asyncpg = "^0.28.0"
+tqdm = "^4.65.0"
+ipywidgets = "^8.1.0"
+cloud-sql-python-connector = "^1.3.0"
+flask = "^2.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
